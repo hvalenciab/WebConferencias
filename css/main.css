@@ -159,6 +159,8 @@ ul {
   display: inline-block;
   transition: all .5s ease;
   border: 2px solid;
+  cursor: pointer;
+
 }
 .boton.hollow {
   background-color: #FFF;
@@ -725,6 +727,112 @@ footer.info-testimonial cite span {
   margin: 20px 0 0 0;
   padding: 10px 0;
 }
+
+/* INTERNAS */
+/* Registro */
+form.registro h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+form.registro label {
+  margin-bottom: 5px;
+}
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #FE4918;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+.caja {
+  background-color: #FFF;
+  border: 1px solid #E1E1E1;
+  padding: 20px;
+  margin: 10px;
+}
+.campo {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .campo {
+    float: left;
+    width: 33.3%;
+  }
+}
+.paquetes .tabla-precio:hover {
+  transform: none;
+  box-shadow: none;
+}
+.paquetes .tabla-precio input {
+  clear: both;
+  width: 30%;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+.contenido-dia {
+  padding: 20px;
+  /* display: none; */
+}
+
+@media (min-width: 768px) {
+  .contenido-dia > div {
+    float: left;
+    width: 33.3%;
+  }
+    
+}
+.contenido-dia > div p {
+  text-align: center;
+  font-weight: bold;
+}
+.contenido-dia > div label {
+  display: block;
+  margin-bottom: 10px;
+  text-indent: -25px;
+  padding-left: 20px;
+
+}
+.contenido-dia > div label {
+  margin-right: 10px;
+}
+.contenido-dia > div input {
+  margin-right: 10px;
+}
+.contenido-dia > div label time {
+  color: #FE4918;
+  font-weight: bold;
+}
+
+/* Detalle Resumen */
+
+.resumen p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.resumen .extras {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+.extras .orden {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.extras .orden input {
+  margin: 10px 0 0 0;
+}
+.resumen .total {
+  float: right;
+  width: 50%;
+  padding: 30px;
+}
+.resumen input {
+  display: block;
+  margin: 10px auto;
+}
+
+
 
 
 
