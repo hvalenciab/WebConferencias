@@ -806,15 +806,31 @@ h4 {
 
 /* Detalle Resumen */
 
+@media (min-width: 768px) {
+  .resumen input.al-iz {
+    margin-top: 30px;
+    
+    }  
+}
+.resumen input.al-iz {
+  margin: 30px auto;
+}
+
 .resumen p {
   font-size: 1.2em;
   text-transform: uppercase;
 }
 .resumen .extras {
-  float: left;
-  width: 50%;
   padding: 30px;
 }
+@media (min-width: 768px) {
+  .resumen .extras {
+    float: left;
+    width: 50%;
+    padding: 30px;
+  }
+}
+
 .extras .orden {
   text-align: left;
   margin-bottom: 10px;
@@ -822,14 +838,42 @@ h4 {
 .extras .orden input {
   margin: 10px 0 0 0;
 }
-.resumen .total {
-  float: right;
-  width: 50%;
-  padding: 30px;
+
+@media (min-width: 768px) {
+  .resumen .total {
+    float: right;
+    width: 50%;
+  }
+}
+
+.resumen .total p {
+  font-weight: bold;
+  line-height: 1;
 }
 .resumen input {
   display: block;
   margin: 10px auto;
+}
+#lista-productos {
+  background-color: #EEEAE9;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  display: none;
+  
+}
+#turegalo {
+  background-color: rgb(126, 27, 3);
+  color: #FFF;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  display: none;
+}
+#suma-total {
+  text-align: center;
+  font-size: 2em;
+  color: #fe4918;
 }
 
 
