@@ -847,7 +847,6 @@ h4 {
 }
 
 .resumen .total p {
-  font-weight: bold;
   line-height: 1;
 }
 .resumen input {
@@ -860,15 +859,16 @@ h4 {
   margin: 0 auto;
   padding: 20px;
   display: none;
-  
+    
 }
 #turegalo {
-  background-color: rgb(126, 27, 3);
-  color: #FFF;
-  width: 90%;
+  color: #fe4918;
+  width: 70%;
   margin: 0 auto;
-  padding: 20px;
+  margin-top: 10px;
+  padding: 5px;
   display: none;
+  text-align: center;
 }
 #suma-total {
   text-align: center;

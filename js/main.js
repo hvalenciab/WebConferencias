@@ -20,6 +20,7 @@
     var btnRegistro = document.getElementById('btnregistro');
     var lista_productos = document.getElementById('lista-productos');
     var suma = document.getElementById('suma-total');
+    var turegalo = document.getElementById('turegalo');
     
     // Extras
     var etiquetas = document.getElementById('etiquetas');
@@ -78,6 +79,14 @@
     }
 
 
+    var select = document.getElementById('regalo');
+select.addEventListener('change',
+  function(){
+    var selectedOption = this.options[select.selectedIndex];
+    turegalo.style.display = "block";
+    turegalo.innerHTML = ('Regalo' + ': ' + selectedOption.text);
+    console.log(selectedOption.value + ': ' + selectedOption.text);
+  });
 
 }); // DOM content Loaded
 })();
