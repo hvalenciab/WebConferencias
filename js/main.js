@@ -22,6 +22,10 @@
     var suma = document.getElementById('suma-total');
     var turegalo = document.getElementById('turegalo');
     
+    if (document.getElementById('calcular')) {
+
+
+    
     // Extras
     var etiquetas = document.getElementById('etiquetas');
     var playera_evento = document.getElementById('playera_evento');
@@ -84,7 +88,7 @@
     turegalo.style.display = "block";
     turegalo.innerHTML = ('Regalo' + ': ' + selectedOption.text);
   });
-
+} 
 
 }); // DOM content Loaded
 })();
@@ -104,6 +108,39 @@ $(function() {
          $(enlace).fadeIn(1000);
          return false;
      });
+
+    // Menu fijo
+
+    var altura = $('.barra').offset().top;
+	
+	$(window).on('scroll', function(){
+		if ( $(window).scrollTop() > altura ){
+			$('.barra').addClass('fixed');
+		} else {
+			$('.barra').removeClass('fixed');
+		}
+	});
+
+    // Menu REsponsivo
+    $('.menu-movil').on('click', function(){
+        $('.navegacion-principal').slideToggle();
+    });
+
+
+    // var windowHeight = $(window).height();
+    // var barraAltura = $('.barra').innerHeight();
+     
+    // $(window).scroll(function() {
+    //      var scroll = $(window).scrollTop();
+    //      if(scroll > windowHeight) {
+    //         $('.barra').addClass('fixed');
+    //         $('body').css({'margin-top': barraAltura+'px'});
+    //      }else {
+    //         $('.barra').removeClass('fixed');
+    //         $('body').css({'margin-top': '0px'});
+    //      }
+    //  });
+
 
 
     //Animaciones

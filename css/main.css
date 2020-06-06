@@ -282,10 +282,22 @@ nav.redes-sociales a:last-child {
   background-color: #353535;
   padding: 20px 0;
 }
+
+
+/*Barra fixed*/
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 .logo img {
   width: 80%;
   float: left;
 }
+
 @media (min-width: 768px) {
   .logo img {
     width: 33%;
@@ -294,6 +306,7 @@ nav.redes-sociales a:last-child {
 /* Nave Principal */
 nav.navegacion-principal {
   display: none;
+  width: 100%;
 }
 
 nav.navegacion-principal a {
@@ -306,7 +319,7 @@ nav.navegacion-principal a {
   width: 100%;
   display: block;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   clear: both;
 }
 nav.navegacion-principal a:last-child {
@@ -323,16 +336,20 @@ nav.navegacion-principal a:hover {
   nav.navegacion-principal {
     width: 67%;
     float: right;
-    text-align: right;
+    text-align: center;
     display: block;
   }
   nav.navegacion-principal a {
     padding: 10px 10px;
     display: inline-block;
     width: auto;
-    display: inline-block;
     text-align: center;
-    margin: 0 10px 0 0;
+    line-height: 1;
+    margin: 0 0 10px 0;
+  }
+  
+  nav.navegacion-principal a:last-child {
+     margin: 0 0 0 0;
   }
 }
 
@@ -342,7 +359,7 @@ nav.navegacion-principal a:hover {
   display: block;
   float: right;
   text-align: right;
-  margin-top: 12px;
+  margin-top: 2px;
 }
 .menu-movil:hover {
   cursor: pointer;
